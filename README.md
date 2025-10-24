@@ -1,2 +1,2 @@
-helloworld# testing
-capstone project: storefront for Marion Family 
+Bradley Valley Livestock 
+
