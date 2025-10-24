@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Bradley Valley Livestock</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #cc5500; /* dark orange - change to image */
+      font-family: 'Lucida Handwriting', cursive;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* title */
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+      margin-bottom: 30px;
+    }
+
+    /* subtitle */ 
+    h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+      margin: 15px 0 30px;
+      opacity: 0;
+      transition: opacity 2s ease-in-out; }
+
+    /* enter website button*/
+    button {
+      background-color: white;
+      color: #cc5500;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 28px;
+      font-size: 1.2em;
+      font-family: 'Lucida Handwriting', cursive;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #ffb380;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    body.loaded h1 {
+      opacity: 1;
+    }
+
+    body.loaded h2 {
+      opacity: 1;
+      transition-delay: 00.5s;
+      }
+
+
+    body.loaded button {
+      opacity: 1;
+      transition-delay: 1s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Bradley Valley Livestock </h1>
+  <h2>The Butcher's Pantry</h2>
+  <button id="enterButton">Enter the Pantry</button>
+
+  <script>
+    // Fade-in effect
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    // Button click handler (redirect or action)
+    document.getElementById('enterButton').addEventListener('click', () => {
+      // Change this to the url when it is made
+      window.location.href = "home.html";
+    });
+  </script>
+</body>
+</html> 
