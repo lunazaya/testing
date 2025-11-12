@@ -1,77 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>The Butcher’s Pantry</title>
- <style>
-   body {
-     margin: 0;
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     background-color: #cc5500;
-     font-family: 'Lucida Handwriting', cursive;
-     color: white;
-     overflow: hidden;
-   }
-
-   h1 {
-     font-size: 2.2em;
-     margin-bottom: 40px;
-     opacity: 0;
-     transition: opacity 2s ease-in-out;
-   }
-
-   .button-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 20px;
-     opacity: 0;
-     transition: opacity 2s ease-in-out 1s;
-   }
-
-   button {
-     background-color: white;
-     color: #cc5500;
-     border: none;
-     border-radius: 25px;
-     padding: 12px 28px;
-     font-size: 1.2em;
-     font-family: 'Lucida Handwriting', cursive;
-     cursor: pointer;
-     transition: all 0.5s ease-in-out;
-   }
-
-   button:hover {
-     background-color: #ffb380;
-     color: white;
-     transform: scale(1.05);
-   }
-
-   body.loaded h1,
-   body.loaded .button-container {
-     opacity: 1;
-   }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Butcher’s Pantry</title>
+  <script src="cart.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
- <h1>The Butcher’s Pantry</h1>
+<body class="pantry-page">
+  
+  <h1>The Butcher’s Pantry</h1>
 
- <div class="button-container">
-   <button onclick="location.href='about1.html'">About Us</button>
-   <button onclick="location.href='butcher1.html'">The Butcher Shop</button>
-   <button onclick="location.href='bakery1.html'">Bakery</button>
-   <button onclick="location.href='preserves1.html'">Preserves</button>
- </div>
+  
+  <div class="button-container">
+    <button onclick="location.href='about1.html'">About Us</button>
+    <button onclick="location.href='butcher1.html'">The Butcher Shop</button>
+    <button onclick="location.href='bakery1.html'">Bakery</button>
+    <button onclick="location.href='preserves1.html'">Preserves</button>
+    <button onclick="location.href='cart1.html'">Go To Cart</button>
+  </div>
 
- <script>
-   window.addEventListener('load', () => {
-     document.body.classList.add('loaded');
-   });
- </script>
+  
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
 </body>
 </html>
