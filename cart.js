@@ -17,6 +17,7 @@ function displayCart() {
     }
 
     let total = 0;
+    
     const listItems = cart.map(item => {
         total += Number(item.price);
         return '<li>${item.name} - $${item.price}</li>';
